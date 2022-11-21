@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+
+    // Tente acertar qual o numero que o programa pede de 1 a 10.
+    // é random, então o padrão sempre varía!!
+
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    alert ("Tente advinhar o numero que estou pensando!")
+    let numeroPensado = Math.round(Math.random() * 10);
+    let chute = parseInt(prompt("Digite um numero!"));
+
+    if(chute == numeroPensado){
+        mostra("Voce acertou");
+    }else{
+        mostra("Voce errou!, o numero era " + numeroPensado );
+    }
+
+    
+</script>
+
+
+
+

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    
+    // Calculadora de anos de jogos da copa do mundo
+    // Treino do uso do while!!
+
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    let limite = parseInt(prompt("Coloque ate quando você quer os anos da copa"));
+    let anoCopa = 1930;
+
+    // while tem funçãod e repetir
+    while(anoCopa <= 2022){
+        mostra("Teve copa em " + anoCopa);
+        anoCopa = anoCopa + 4;
+    }
+
+    mostra("FIM");
+
+</script>
